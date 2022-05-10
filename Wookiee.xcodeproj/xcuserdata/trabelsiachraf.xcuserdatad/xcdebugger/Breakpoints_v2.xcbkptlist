@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "884F1699-AF67-446B-9EAA-5E146D92CADA"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5CB89FE2-939E-455C-8274-1AA4895B7118"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WookieeTests/Presentation/MoviesList/MoviesViewModelTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "test_loadView_whenServiceReturnSuccessWithData_thenWeHaveMovieList()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5CB89FE2-939E-455C-8274-1AA4895B7118 - bf156b131e3fdac5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WookieeTests.MoviesViewModelTests.test_init() -&gt; ()"
+                  moduleName = "WookieeTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/trabelsiachraf/Documents/Workspace/Perso/ios-wazado/Wookiee/WookieeTests/Presentation/MoviesList/MoviesViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "406">
+               </Location>
+               <Location
+                  uuid = "5CB89FE2-939E-455C-8274-1AA4895B7118 - bf156b131e3fdac5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WookieeTests.MoviesViewModelTests.test_init() -&gt; ()"
+                  moduleName = "WookieeTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/trabelsiachraf/Documents/Workspace/Perso/ios-wazado/Wookiee/WookieeTests/Presentation/MoviesList/MoviesViewModelTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "437">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5203F92D-63CB-45EF-BA01-1D0951585965"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Wookiee/Presentation/MoviesFeatures/MoviesList/ViewModel/DefaultMoviesViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "setupMovies(with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "88768D73-41FC-4355-BE9F-89F6602912BB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Wookiee/Presentation/MoviesFeatures/MoviesList/ViewModel/DefaultMoviesViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "setupMovies(with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

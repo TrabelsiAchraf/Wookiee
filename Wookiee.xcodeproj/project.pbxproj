@@ -1,0 +1,834 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD207B452829383800BF4FBE /* FetchMoviesUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD207B442829383800BF4FBE /* FetchMoviesUseCaseTests.swift */; };
+		FD207B48282948F600BF4FBE /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD207B47282948F600BF4FBE /* SharedTestHelpers.swift */; };
+		FD207B4C28294A1000BF4FBE /* MoviesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD207B4B28294A1000BF4FBE /* MoviesViewModelTests.swift */; };
+		FD207B4E28295F9100BF4FBE /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD207B4D28295F9100BF4FBE /* AppConfiguration.swift */; };
+		FD8EB51328234CA40070C2B6 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8EB51228234CA40070C2B6 /* DependencyContainer.swift */; };
+		FDA2FE1828213CE600A7DF8C /* WookieeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA2FE1728213CE600A7DF8C /* WookieeApp.swift */; };
+		FDA2FE1A28213CE600A7DF8C /* MovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA2FE1928213CE600A7DF8C /* MovieListView.swift */; };
+		FDA2FE1C28213CE800A7DF8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDA2FE1B28213CE800A7DF8C /* Assets.xcassets */; };
+		FDA2FE1F28213CE800A7DF8C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDA2FE1E28213CE800A7DF8C /* Preview Assets.xcassets */; };
+		FDA2FE422821476500A7DF8C /* MovieCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA2FE412821476500A7DF8C /* MovieCellView.swift */; };
+		FDA2FE4428214F1400A7DF8C /* DefaultMoviesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA2FE4328214F1400A7DF8C /* DefaultMoviesViewModel.swift */; };
+		FDA2FE4828214F6300A7DF8C /* MoviesMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA2FE4728214F6300A7DF8C /* MoviesMock.swift */; };
+		FDA2FE4A2821531800A7DF8C /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA2FE492821531800A7DF8C /* ColorExtension.swift */; };
+		FDA2FE542822886700A7DF8C /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA2FE532822886700A7DF8C /* HTTPClient.swift */; };
+		FDA2FE562822888700A7DF8C /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA2FE552822888700A7DF8C /* URLSessionHTTPClient.swift */; };
+		FDA2FE5828228B1A00A7DF8C /* MovieResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA2FE5728228B1A00A7DF8C /* MovieResponseDTO.swift */; };
+		FDA2FE5E2822922800A7DF8C /* FetchMoviesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA2FE5D2822922800A7DF8C /* FetchMoviesUseCase.swift */; };
+		FDA2FE60282292D700A7DF8C /* FetchedMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA2FE5F282292D700A7DF8C /* FetchedMovie.swift */; };
+		FDA2FE632822935300A7DF8C /* MoviesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA2FE622822935300A7DF8C /* MoviesRepository.swift */; };
+		FDA2FE672822944800A7DF8C /* DefaultMoviesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA2FE662822944800A7DF8C /* DefaultMoviesRepository.swift */; };
+		FDA2FE752822A05C00A7DF8C /* DefaultDataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA2FE742822A05C00A7DF8C /* DefaultDataTransferService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FDA2FE2528213CE800A7DF8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDA2FE0C28213CE600A7DF8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDA2FE1328213CE600A7DF8C;
+			remoteInfo = Wookiee;
+		};
+		FDA2FE2F28213CE800A7DF8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDA2FE0C28213CE600A7DF8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDA2FE1328213CE600A7DF8C;
+			remoteInfo = Wookiee;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FD207B442829383800BF4FBE /* FetchMoviesUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchMoviesUseCaseTests.swift; sourceTree = "<group>"; };
+		FD207B47282948F600BF4FBE /* SharedTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTestHelpers.swift; sourceTree = "<group>"; };
+		FD207B4B28294A1000BF4FBE /* MoviesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewModelTests.swift; sourceTree = "<group>"; };
+		FD207B4D28295F9100BF4FBE /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		FD8EB51228234CA40070C2B6 /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		FDA2FE1428213CE600A7DF8C /* Wookiee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wookiee.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDA2FE1728213CE600A7DF8C /* WookieeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WookieeApp.swift; sourceTree = "<group>"; };
+		FDA2FE1928213CE600A7DF8C /* MovieListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListView.swift; sourceTree = "<group>"; };
+		FDA2FE1B28213CE800A7DF8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FDA2FE1E28213CE800A7DF8C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FDA2FE2428213CE800A7DF8C /* WookieeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WookieeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDA2FE2E28213CE800A7DF8C /* WookieeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WookieeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDA2FE412821476500A7DF8C /* MovieCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCellView.swift; sourceTree = "<group>"; };
+		FDA2FE4328214F1400A7DF8C /* DefaultMoviesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultMoviesViewModel.swift; sourceTree = "<group>"; };
+		FDA2FE4728214F6300A7DF8C /* MoviesMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesMock.swift; sourceTree = "<group>"; };
+		FDA2FE492821531800A7DF8C /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		FDA2FE532822886700A7DF8C /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		FDA2FE552822888700A7DF8C /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
+		FDA2FE5728228B1A00A7DF8C /* MovieResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResponseDTO.swift; sourceTree = "<group>"; };
+		FDA2FE5D2822922800A7DF8C /* FetchMoviesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchMoviesUseCase.swift; sourceTree = "<group>"; };
+		FDA2FE5F282292D700A7DF8C /* FetchedMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchedMovie.swift; sourceTree = "<group>"; };
+		FDA2FE622822935300A7DF8C /* MoviesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRepository.swift; sourceTree = "<group>"; };
+		FDA2FE662822944800A7DF8C /* DefaultMoviesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultMoviesRepository.swift; sourceTree = "<group>"; };
+		FDA2FE742822A05C00A7DF8C /* DefaultDataTransferService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDataTransferService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FDA2FE1128213CE600A7DF8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDA2FE2128213CE800A7DF8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDA2FE2B28213CE800A7DF8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD207B422829380900BF4FBE /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				FD207B432829381600BF4FBE /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		FD207B432829381600BF4FBE /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				FD207B442829383800BF4FBE /* FetchMoviesUseCaseTests.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		FD207B46282948D900BF4FBE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FD207B47282948F600BF4FBE /* SharedTestHelpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FD207B49282949D500BF4FBE /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				FD207B4A282949E700BF4FBE /* MoviesList */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		FD207B4A282949E700BF4FBE /* MoviesList */ = {
+			isa = PBXGroup;
+			children = (
+				FD207B4B28294A1000BF4FBE /* MoviesViewModelTests.swift */,
+			);
+			path = MoviesList;
+			sourceTree = "<group>";
+		};
+		FDA2FE0B28213CE600A7DF8C = {
+			isa = PBXGroup;
+			children = (
+				FDA2FE1628213CE600A7DF8C /* Wookiee */,
+				FDA2FE2728213CE800A7DF8C /* WookieeTests */,
+				FDA2FE3128213CE800A7DF8C /* WookieeUITests */,
+				FDA2FE1528213CE600A7DF8C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FDA2FE1528213CE600A7DF8C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDA2FE1428213CE600A7DF8C /* Wookiee.app */,
+				FDA2FE2428213CE800A7DF8C /* WookieeTests.xctest */,
+				FDA2FE2E28213CE800A7DF8C /* WookieeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDA2FE1628213CE600A7DF8C /* Wookiee */ = {
+			isa = PBXGroup;
+			children = (
+				FDA2FE6B2822971200A7DF8C /* Application */,
+				FDA2FE6A2822970100A7DF8C /* Presentation */,
+				FDA2FE592822912800A7DF8C /* Domain */,
+				FDA2FE642822943100A7DF8C /* Data */,
+				FDA2FE68282296C500A7DF8C /* Infrastructure */,
+				FDA2FE6C2822972D00A7DF8C /* Resources */,
+				FDA2FE1D28213CE800A7DF8C /* Preview Content */,
+			);
+			path = Wookiee;
+			sourceTree = "<group>";
+		};
+		FDA2FE1D28213CE800A7DF8C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FDA2FE1E28213CE800A7DF8C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FDA2FE2728213CE800A7DF8C /* WookieeTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD207B49282949D500BF4FBE /* Presentation */,
+				FD207B46282948D900BF4FBE /* Helpers */,
+				FD207B422829380900BF4FBE /* Domain */,
+			);
+			path = WookieeTests;
+			sourceTree = "<group>";
+		};
+		FDA2FE3128213CE800A7DF8C /* WookieeUITests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WookieeUITests;
+			sourceTree = "<group>";
+		};
+		FDA2FE592822912800A7DF8C /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				FDA2FE5B2822915B00A7DF8C /* Entities */,
+				FDA2FE5A2822915200A7DF8C /* UseCases */,
+				FDA2FE5C2822916700A7DF8C /* Interfaces */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		FDA2FE5A2822915200A7DF8C /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				FDA2FE5D2822922800A7DF8C /* FetchMoviesUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		FDA2FE5B2822915B00A7DF8C /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				FDA2FE5F282292D700A7DF8C /* FetchedMovie.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		FDA2FE5C2822916700A7DF8C /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				FDA2FE612822933C00A7DF8C /* Repositories */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		FDA2FE612822933C00A7DF8C /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				FDA2FE622822935300A7DF8C /* MoviesRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		FDA2FE642822943100A7DF8C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FDA2FE652822944000A7DF8C /* Repositories */,
+				FDA2FE69282296DE00A7DF8C /* Network */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		FDA2FE652822944000A7DF8C /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				FDA2FE662822944800A7DF8C /* DefaultMoviesRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		FDA2FE68282296C500A7DF8C /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				FDA2FE742822A05C00A7DF8C /* DefaultDataTransferService.swift */,
+				FDA2FE532822886700A7DF8C /* HTTPClient.swift */,
+				FDA2FE552822888700A7DF8C /* URLSessionHTTPClient.swift */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		FDA2FE69282296DE00A7DF8C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FDA2FE5728228B1A00A7DF8C /* MovieResponseDTO.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FDA2FE6A2822970100A7DF8C /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				FDA2FE6E2822977000A7DF8C /* MoviesFeatures */,
+				FDA2FE6D2822975800A7DF8C /* Utils */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		FDA2FE6B2822971200A7DF8C /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				FDA2FE1728213CE600A7DF8C /* WookieeApp.swift */,
+				FD8EB51228234CA40070C2B6 /* DependencyContainer.swift */,
+				FD207B4D28295F9100BF4FBE /* AppConfiguration.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		FDA2FE6C2822972D00A7DF8C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FDA2FE1B28213CE800A7DF8C /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FDA2FE6D2822975800A7DF8C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FDA2FE4728214F6300A7DF8C /* MoviesMock.swift */,
+				FDA2FE492821531800A7DF8C /* ColorExtension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		FDA2FE6E2822977000A7DF8C /* MoviesFeatures */ = {
+			isa = PBXGroup;
+			children = (
+				FDA2FE6F2822978C00A7DF8C /* MoviesList */,
+			);
+			path = MoviesFeatures;
+			sourceTree = "<group>";
+		};
+		FDA2FE6F2822978C00A7DF8C /* MoviesList */ = {
+			isa = PBXGroup;
+			children = (
+				FDA2FE702822979400A7DF8C /* View */,
+				FDA2FE712822979A00A7DF8C /* ViewModel */,
+			);
+			path = MoviesList;
+			sourceTree = "<group>";
+		};
+		FDA2FE702822979400A7DF8C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FDA2FE1928213CE600A7DF8C /* MovieListView.swift */,
+				FDA2FE412821476500A7DF8C /* MovieCellView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FDA2FE712822979A00A7DF8C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FDA2FE4328214F1400A7DF8C /* DefaultMoviesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDA2FE1328213CE600A7DF8C /* Wookiee */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDA2FE3828213CE800A7DF8C /* Build configuration list for PBXNativeTarget "Wookiee" */;
+			buildPhases = (
+				FDA2FE1028213CE600A7DF8C /* Sources */,
+				FDA2FE1128213CE600A7DF8C /* Frameworks */,
+				FDA2FE1228213CE600A7DF8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Wookiee;
+			productName = Wookiee;
+			productReference = FDA2FE1428213CE600A7DF8C /* Wookiee.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FDA2FE2328213CE800A7DF8C /* WookieeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDA2FE3B28213CE800A7DF8C /* Build configuration list for PBXNativeTarget "WookieeTests" */;
+			buildPhases = (
+				FDA2FE2028213CE800A7DF8C /* Sources */,
+				FDA2FE2128213CE800A7DF8C /* Frameworks */,
+				FDA2FE2228213CE800A7DF8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDA2FE2628213CE800A7DF8C /* PBXTargetDependency */,
+			);
+			name = WookieeTests;
+			productName = WookieeTests;
+			productReference = FDA2FE2428213CE800A7DF8C /* WookieeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FDA2FE2D28213CE800A7DF8C /* WookieeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDA2FE3E28213CE800A7DF8C /* Build configuration list for PBXNativeTarget "WookieeUITests" */;
+			buildPhases = (
+				FDA2FE2A28213CE800A7DF8C /* Sources */,
+				FDA2FE2B28213CE800A7DF8C /* Frameworks */,
+				FDA2FE2C28213CE800A7DF8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDA2FE3028213CE800A7DF8C /* PBXTargetDependency */,
+			);
+			name = WookieeUITests;
+			productName = WookieeUITests;
+			productReference = FDA2FE2E28213CE800A7DF8C /* WookieeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDA2FE0C28213CE600A7DF8C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					FDA2FE1328213CE600A7DF8C = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					FDA2FE2328213CE800A7DF8C = {
+						CreatedOnToolsVersion = 13.3;
+						LastSwiftMigration = 1330;
+						TestTargetID = FDA2FE1328213CE600A7DF8C;
+					};
+					FDA2FE2D28213CE800A7DF8C = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = FDA2FE1328213CE600A7DF8C;
+					};
+				};
+			};
+			buildConfigurationList = FDA2FE0F28213CE600A7DF8C /* Build configuration list for PBXProject "Wookiee" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FDA2FE0B28213CE600A7DF8C;
+			productRefGroup = FDA2FE1528213CE600A7DF8C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDA2FE1328213CE600A7DF8C /* Wookiee */,
+				FDA2FE2328213CE800A7DF8C /* WookieeTests */,
+				FDA2FE2D28213CE800A7DF8C /* WookieeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FDA2FE1228213CE600A7DF8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDA2FE1F28213CE800A7DF8C /* Preview Assets.xcassets in Resources */,
+				FDA2FE1C28213CE800A7DF8C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDA2FE2228213CE800A7DF8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDA2FE2C28213CE800A7DF8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FDA2FE1028213CE600A7DF8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDA2FE752822A05C00A7DF8C /* DefaultDataTransferService.swift in Sources */,
+				FD207B4E28295F9100BF4FBE /* AppConfiguration.swift in Sources */,
+				FD8EB51328234CA40070C2B6 /* DependencyContainer.swift in Sources */,
+				FDA2FE632822935300A7DF8C /* MoviesRepository.swift in Sources */,
+				FDA2FE60282292D700A7DF8C /* FetchedMovie.swift in Sources */,
+				FDA2FE1A28213CE600A7DF8C /* MovieListView.swift in Sources */,
+				FDA2FE422821476500A7DF8C /* MovieCellView.swift in Sources */,
+				FDA2FE5E2822922800A7DF8C /* FetchMoviesUseCase.swift in Sources */,
+				FDA2FE542822886700A7DF8C /* HTTPClient.swift in Sources */,
+				FDA2FE672822944800A7DF8C /* DefaultMoviesRepository.swift in Sources */,
+				FDA2FE5828228B1A00A7DF8C /* MovieResponseDTO.swift in Sources */,
+				FDA2FE1828213CE600A7DF8C /* WookieeApp.swift in Sources */,
+				FDA2FE4428214F1400A7DF8C /* DefaultMoviesViewModel.swift in Sources */,
+				FDA2FE4828214F6300A7DF8C /* MoviesMock.swift in Sources */,
+				FDA2FE4A2821531800A7DF8C /* ColorExtension.swift in Sources */,
+				FDA2FE562822888700A7DF8C /* URLSessionHTTPClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDA2FE2028213CE800A7DF8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD207B48282948F600BF4FBE /* SharedTestHelpers.swift in Sources */,
+				FD207B4C28294A1000BF4FBE /* MoviesViewModelTests.swift in Sources */,
+				FD207B452829383800BF4FBE /* FetchMoviesUseCaseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDA2FE2A28213CE800A7DF8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FDA2FE2628213CE800A7DF8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDA2FE1328213CE600A7DF8C /* Wookiee */;
+			targetProxy = FDA2FE2528213CE800A7DF8C /* PBXContainerItemProxy */;
+		};
+		FDA2FE3028213CE800A7DF8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDA2FE1328213CE600A7DF8C /* Wookiee */;
+			targetProxy = FDA2FE2F28213CE800A7DF8C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FDA2FE3628213CE800A7DF8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FDA2FE3728213CE800A7DF8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FDA2FE3928213CE800A7DF8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Wookiee/Preview Content\"";
+				DEVELOPMENT_TEAM = QN66UQNDZR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tadev.Wookiee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FDA2FE3A28213CE800A7DF8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Wookiee/Preview Content\"";
+				DEVELOPMENT_TEAM = QN66UQNDZR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tadev.Wookiee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FDA2FE3C28213CE800A7DF8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QN66UQNDZR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tadev.WookieeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wookiee.app/Wookiee";
+			};
+			name = Debug;
+		};
+		FDA2FE3D28213CE800A7DF8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QN66UQNDZR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tadev.WookieeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wookiee.app/Wookiee";
+			};
+			name = Release;
+		};
+		FDA2FE3F28213CE800A7DF8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QN66UQNDZR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tadev.WookieeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Wookiee;
+			};
+			name = Debug;
+		};
+		FDA2FE4028213CE800A7DF8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QN66UQNDZR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tadev.WookieeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Wookiee;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FDA2FE0F28213CE600A7DF8C /* Build configuration list for PBXProject "Wookiee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDA2FE3628213CE800A7DF8C /* Debug */,
+				FDA2FE3728213CE800A7DF8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDA2FE3828213CE800A7DF8C /* Build configuration list for PBXNativeTarget "Wookiee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDA2FE3928213CE800A7DF8C /* Debug */,
+				FDA2FE3A28213CE800A7DF8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDA2FE3B28213CE800A7DF8C /* Build configuration list for PBXNativeTarget "WookieeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDA2FE3C28213CE800A7DF8C /* Debug */,
+				FDA2FE3D28213CE800A7DF8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDA2FE3E28213CE800A7DF8C /* Build configuration list for PBXNativeTarget "WookieeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDA2FE3F28213CE800A7DF8C /* Debug */,
+				FDA2FE4028213CE800A7DF8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FDA2FE0C28213CE600A7DF8C /* Project object */;
+}
