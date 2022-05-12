@@ -7,16 +7,16 @@
 
 import Foundation
 
-class URLSessionHTTPClient: HTTPClient {
+public class URLSessionHTTPClient: HTTPClient {
     private let session: URLSession
     
-    init(session: URLSession) {
+    public init(session: URLSession) {
         self.session = session
     }
     
     private struct UnexpectedValuesRepresentation: Error {}
     
-    func get(from request: URLRequest, completion: @escaping (Result<(Data, HTTPURLResponse), Error>) -> Void) {
+    public func get(from request: URLRequest, completion: @escaping (Result<(Data, HTTPURLResponse), Error>) -> Void) {
         session.dataTask(with: request) { data, response, error in
             completion(Result {
                 if let error = error {

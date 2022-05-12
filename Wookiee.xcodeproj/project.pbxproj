@@ -13,6 +13,7 @@
 		FD207B4E28295F9100BF4FBE /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD207B4D28295F9100BF4FBE /* AppConfiguration.swift */; };
 		FD8EB51328234CA40070C2B6 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8EB51228234CA40070C2B6 /* DependencyContainer.swift */; };
 		FDA006D5282D259400CF75FD /* DomainKit in Frameworks */ = {isa = PBXBuildFile; productRef = FDA006D4282D259400CF75FD /* DomainKit */; };
+		FDA006D8282D298C00CF75FD /* InfrastructureKit in Frameworks */ = {isa = PBXBuildFile; productRef = FDA006D7282D298C00CF75FD /* InfrastructureKit */; };
 		FDA2FE1828213CE600A7DF8C /* WookieeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA2FE1728213CE600A7DF8C /* WookieeApp.swift */; };
 		FDA2FE1A28213CE600A7DF8C /* MovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA2FE1928213CE600A7DF8C /* MovieListView.swift */; };
 		FDA2FE1C28213CE800A7DF8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDA2FE1B28213CE800A7DF8C /* Assets.xcassets */; };
@@ -20,11 +21,8 @@
 		FDA2FE422821476500A7DF8C /* MovieCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA2FE412821476500A7DF8C /* MovieCellView.swift */; };
 		FDA2FE4428214F1400A7DF8C /* DefaultMoviesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA2FE4328214F1400A7DF8C /* DefaultMoviesViewModel.swift */; };
 		FDA2FE4A2821531800A7DF8C /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA2FE492821531800A7DF8C /* ColorExtension.swift */; };
-		FDA2FE542822886700A7DF8C /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA2FE532822886700A7DF8C /* HTTPClient.swift */; };
-		FDA2FE562822888700A7DF8C /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA2FE552822888700A7DF8C /* URLSessionHTTPClient.swift */; };
 		FDA2FE5828228B1A00A7DF8C /* MovieResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA2FE5728228B1A00A7DF8C /* MovieResponseDTO.swift */; };
 		FDA2FE672822944800A7DF8C /* DefaultMoviesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA2FE662822944800A7DF8C /* DefaultMoviesRepository.swift */; };
-		FDA2FE752822A05C00A7DF8C /* DefaultDataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA2FE742822A05C00A7DF8C /* DefaultDataTransferService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +48,7 @@
 		FD207B4B28294A1000BF4FBE /* MoviesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewModelTests.swift; sourceTree = "<group>"; };
 		FD207B4D28295F9100BF4FBE /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
 		FD8EB51228234CA40070C2B6 /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		FDA006D6282D298200CF75FD /* InfrastructureKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = InfrastructureKit; sourceTree = "<group>"; };
 		FDA2FE1428213CE600A7DF8C /* Wookiee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wookiee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDA2FE1728213CE600A7DF8C /* WookieeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WookieeApp.swift; sourceTree = "<group>"; };
 		FDA2FE1928213CE600A7DF8C /* MovieListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListView.swift; sourceTree = "<group>"; };
@@ -60,11 +59,8 @@
 		FDA2FE412821476500A7DF8C /* MovieCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCellView.swift; sourceTree = "<group>"; };
 		FDA2FE4328214F1400A7DF8C /* DefaultMoviesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultMoviesViewModel.swift; sourceTree = "<group>"; };
 		FDA2FE492821531800A7DF8C /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
-		FDA2FE532822886700A7DF8C /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
-		FDA2FE552822888700A7DF8C /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
 		FDA2FE5728228B1A00A7DF8C /* MovieResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResponseDTO.swift; sourceTree = "<group>"; };
 		FDA2FE662822944800A7DF8C /* DefaultMoviesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultMoviesRepository.swift; sourceTree = "<group>"; };
-		FDA2FE742822A05C00A7DF8C /* DefaultDataTransferService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDataTransferService.swift; sourceTree = "<group>"; };
 		FDF2FBF2282D242D005941A7 /* DomainKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = DomainKit; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDA006D8282D298C00CF75FD /* InfrastructureKit in Frameworks */,
 				FDA006D5282D259400CF75FD /* DomainKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -169,7 +166,6 @@
 				FDA2FE6B2822971200A7DF8C /* Application */,
 				FDA2FE6A2822970100A7DF8C /* Presentation */,
 				FDA2FE642822943100A7DF8C /* Data */,
-				FDA2FE68282296C500A7DF8C /* Infrastructure */,
 				FDA2FE6C2822972D00A7DF8C /* Resources */,
 				FDA2FE1D28213CE800A7DF8C /* Preview Content */,
 			);
@@ -216,16 +212,6 @@
 				FDA2FE662822944800A7DF8C /* DefaultMoviesRepository.swift */,
 			);
 			path = Repositories;
-			sourceTree = "<group>";
-		};
-		FDA2FE68282296C500A7DF8C /* Infrastructure */ = {
-			isa = PBXGroup;
-			children = (
-				FDA2FE742822A05C00A7DF8C /* DefaultDataTransferService.swift */,
-				FDA2FE532822886700A7DF8C /* HTTPClient.swift */,
-				FDA2FE552822888700A7DF8C /* URLSessionHTTPClient.swift */,
-			);
-			path = Infrastructure;
 			sourceTree = "<group>";
 		};
 		FDA2FE69282296DE00A7DF8C /* Network */ = {
@@ -309,6 +295,7 @@
 			isa = PBXGroup;
 			children = (
 				FDF2FBF2282D242D005941A7 /* DomainKit */,
+				FDA006D6282D298200CF75FD /* InfrastructureKit */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -331,6 +318,7 @@
 			name = Wookiee;
 			packageProductDependencies = (
 				FDA006D4282D259400CF75FD /* DomainKit */,
+				FDA006D7282D298C00CF75FD /* InfrastructureKit */,
 			);
 			productName = Wookiee;
 			productReference = FDA2FE1428213CE600A7DF8C /* Wookiee.app */;
@@ -447,18 +435,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDA2FE752822A05C00A7DF8C /* DefaultDataTransferService.swift in Sources */,
 				FD207B4E28295F9100BF4FBE /* AppConfiguration.swift in Sources */,
 				FD8EB51328234CA40070C2B6 /* DependencyContainer.swift in Sources */,
 				FDA2FE1A28213CE600A7DF8C /* MovieListView.swift in Sources */,
 				FDA2FE422821476500A7DF8C /* MovieCellView.swift in Sources */,
-				FDA2FE542822886700A7DF8C /* HTTPClient.swift in Sources */,
 				FDA2FE672822944800A7DF8C /* DefaultMoviesRepository.swift in Sources */,
 				FDA2FE5828228B1A00A7DF8C /* MovieResponseDTO.swift in Sources */,
 				FDA2FE1828213CE600A7DF8C /* WookieeApp.swift in Sources */,
 				FDA2FE4428214F1400A7DF8C /* DefaultMoviesViewModel.swift in Sources */,
 				FDA2FE4A2821531800A7DF8C /* ColorExtension.swift in Sources */,
-				FDA2FE562822888700A7DF8C /* URLSessionHTTPClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -801,6 +786,10 @@
 		FDA006D4282D259400CF75FD /* DomainKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = DomainKit;
+		};
+		FDA006D7282D298C00CF75FD /* InfrastructureKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = InfrastructureKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

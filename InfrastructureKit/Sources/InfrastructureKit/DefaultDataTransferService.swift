@@ -16,14 +16,14 @@ public protocol ResponseDecoder {
     func decode<T: Decodable>(_ data: Data) throws -> T
 }
 
-protocol DataTransferService {
+public protocol DataTransferService {
     func request<T: Decodable>(from request: URLRequest, completion: @escaping (Result<T, Error>) -> Void)
 }
 
-final class DefaultDataTransferService {
-    private let networkService: HTTPClient
+public final class DefaultDataTransferService {
+    public let networkService: HTTPClient
     
-    init(networkService: HTTPClient = URLSessionHTTPClient(session: URLSession.shared)) {
+    public init(networkService: HTTPClient = URLSessionHTTPClient(session: URLSession.shared)) {
         self.networkService = networkService
     }
 }
@@ -31,7 +31,7 @@ final class DefaultDataTransferService {
 extension DefaultDataTransferService: DataTransferService {
     private static var OK_200: Int { return 200 }
     
-    func request<T>(from request: URLRequest, completion: @escaping (Result<T, Error>) -> Void) where T : Decodable {
+    public func request<T>(from request: URLRequest, completion: @escaping (Result<T, Error>) -> Void) where T : Decodable {
         networkService.get(from: request) { result in
             switch result {
             case let .success((data, response)):

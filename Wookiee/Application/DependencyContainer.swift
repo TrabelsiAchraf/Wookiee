@@ -7,6 +7,7 @@
 
 import Foundation
 import DomainKit
+import InfrastructureKit
 
 protocol ViewModelFactory {
     func makeDefaultMoviesViewModel() -> DefaultMoviesViewModel
