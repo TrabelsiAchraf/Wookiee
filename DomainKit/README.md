@@ -1,3 +1,3 @@
 # DomainKit
 
-A description of this package.
+This package contains the domain layer with different use cases for Wookie app.
