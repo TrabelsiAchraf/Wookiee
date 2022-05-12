@@ -7,7 +7,6 @@
 
 import XCTest
 import DomainKit
-@testable import Wookiee
 
 class FetchMoviesUseCaseTests: XCTestCase {
     
@@ -53,9 +52,12 @@ final class MockMoviesRepository: MoviesRepository {
 }
 
 final class MockMoviesRepositoryError: MoviesRepository {
-    func fetchMovies(completion: @escaping (Result<[FetchedMovie], Error>) -> Void) {
+    public func fetchMovies(completion: @escaping (Result<[FetchedMovie], Error>) -> Void) {
         completion(.failure(NSError(domain: "any error", code: 0)))
     }
 }
 
 
+func anyError() -> NSError {
+    NSError(domain: "any error", code: 0)
+}

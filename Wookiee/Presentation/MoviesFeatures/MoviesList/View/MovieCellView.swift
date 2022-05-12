@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import DomainKit
 
 struct MovieCellView: View {
     var thumbnailURL: URL

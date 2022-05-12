@@ -7,18 +7,18 @@
 
 import Foundation
 
-protocol FetchMoviesUseCase {
+public protocol FetchMoviesUseCase {
     func execute(completion: @escaping (Result<[FetchedMovie], Error>) -> Void)
 }
 
-final class DefaultFetchMoviesUseCase: FetchMoviesUseCase {
+public final class DefaultFetchMoviesUseCase: FetchMoviesUseCase {
     private let moviesRepository: MoviesRepository
     
-    init(moviesRepository: MoviesRepository) {
+    public init(moviesRepository: MoviesRepository) {
         self.moviesRepository = moviesRepository
     }
     
-    func execute(completion: @escaping (Result<[FetchedMovie], Error>) -> Void) {
+    public func execute(completion: @escaping (Result<[FetchedMovie], Error>) -> Void) {
         moviesRepository.fetchMovies(completion: completion)
     }
 }

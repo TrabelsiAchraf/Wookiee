@@ -6,6 +6,9 @@
 //
 
 import Foundation
+import SwiftUI
+import Combine
+import DomainKit
 
 protocol MoviesViewModelInput {
     func loadView()

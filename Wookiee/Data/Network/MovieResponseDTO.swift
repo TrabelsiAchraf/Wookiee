@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import DomainKit
 
 struct MovieListResponseDTO: Codable {
     let movies: [MovieResponseDTO]

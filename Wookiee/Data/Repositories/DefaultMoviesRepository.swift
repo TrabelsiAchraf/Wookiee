@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import DomainKit
 
 final class DefaultMoviesRepository: MoviesRepository {
     

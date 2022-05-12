@@ -6,6 +6,7 @@
 //
 
 import XCTest
+import DomainKit
 @testable import Wookiee
 
 class MoviesViewModelTests: XCTestCase {

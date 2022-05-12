@@ -14,8 +14,8 @@
             filePath = "WookieeTests/Presentation/MoviesList/MoviesViewModelTests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
             landmarkName = "test_loadView_whenServiceReturnSuccessWithData_thenWeHaveMovieList()"
             landmarkType = "7">
             <Locations>
@@ -62,8 +62,8 @@
             filePath = "Wookiee/Presentation/MoviesFeatures/MoviesList/ViewModel/DefaultMoviesViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
             landmarkName = "setupMovies(with:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -78,8 +78,8 @@
             filePath = "Wookiee/Presentation/MoviesFeatures/MoviesList/ViewModel/DefaultMoviesViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
             landmarkName = "setupMovies(with:)"
             landmarkType = "7">
          </BreakpointContent>
